@@ -5,18 +5,19 @@
 }
 
 :root {
-    --bg: #07111f;
-    --bg-secondary: #0f1b33;
-    --card: #121f3d;
+    --bg: #050b16;
+    --bg-secondary: #091527;
+    --card: #0e1d36;
+    --card-soft: rgba(18, 37, 70, 0.65);
 
-    --primary: #3b82f6;
+    --primary: #2563eb;
     --primary-light: #60a5fa;
     --accent: #38bdf8;
+    --cyan: #22d3ee;
 
     --text: #f8fafc;
     --muted: #94a3b8;
-
-    --border: rgba(255,255,255,0.1);
+    --border: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -25,7 +26,10 @@ html {
 
 body {
     font-family: "Segoe UI", sans-serif;
-    background: var(--bg);
+    background:
+        radial-gradient(circle at 80% 10%, rgba(37, 99, 235, 0.28), transparent 30%),
+        radial-gradient(circle at 10% 70%, rgba(34, 211, 238, 0.14), transparent 30%),
+        var(--bg);
     color: var(--text);
     line-height: 1.7;
 }
@@ -42,51 +46,58 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(7, 17, 31, 0.85);
-    backdrop-filter: blur(14px);
+    background: rgba(5, 11, 22, 0.78);
+    backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
 }
 
 .logo {
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--primary-light);
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 28px;
 }
 
 nav a {
     color: var(--muted);
     text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--primary-light);
+    color: var(--accent);
 }
 
 .hero {
     min-height: 100vh;
-    display: flex;
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
     align-items: center;
+    gap: 60px;
     position: relative;
     overflow: hidden;
 }
 
-.hero::before {
-    content: "";
+.hero-glow {
     position: absolute;
-    width: 520px;
-    height: 520px;
-    background: radial-gradient(circle, rgba(59,130,246,0.35), transparent 70%);
-    top: 15%;
-    right: 8%;
-    filter: blur(20px);
+    width: 560px;
+    height: 560px;
+    right: 5%;
+    top: 18%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.42), transparent 68%);
+    filter: blur(24px);
 }
 
 .hero-content {
@@ -96,17 +107,18 @@ nav a:hover {
 }
 
 .section-tag {
-    color: var(--primary-light);
-    font-weight: 700;
-    letter-spacing: 1px;
+    color: var(--accent);
+    font-weight: 800;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 0.85rem;
-    margin-bottom: 14px;
+    font-size: 0.78rem;
+    margin-bottom: 16px;
 }
 
 .hero h1 {
-    font-size: clamp(2.6rem, 7vw, 5rem);
-    line-height: 1.05;
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 0.95;
+    letter-spacing: -4px;
     margin-bottom: 28px;
 }
 
@@ -115,9 +127,9 @@ nav a:hover {
 }
 
 .hero-text {
-    max-width: 700px;
+    max-width: 720px;
     color: var(--muted);
-    font-size: 1.15rem;
+    font-size: 1.12rem;
     margin-bottom: 36px;
 }
 
@@ -128,33 +140,83 @@ nav a:hover {
 }
 
 .btn {
-    padding: 14px 28px;
-    border-radius: 12px;
+    padding: 15px 30px;
+    border-radius: 999px;
     text-decoration: none;
-    font-weight: 700;
-    transition: 0.3s;
+    font-weight: 800;
+    transition: 0.3s ease;
 }
 
 .primary {
     background: linear-gradient(135deg, var(--primary), var(--accent));
     color: white;
+    box-shadow: 0 18px 45px rgba(37, 99, 235, 0.35);
 }
 
 .secondary {
     border: 1px solid var(--primary-light);
     color: white;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .btn:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
+}
+
+.hero-card {
+    position: relative;
+    z-index: 2;
+    width: 320px;
+    height: 410px;
+    border-radius: 34px;
+    background: linear-gradient(180deg, rgba(18, 37, 70, 0.9), rgba(8, 18, 35, 0.75));
+    border: 1px solid var(--border);
+    box-shadow: 0 35px 90px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-card::before {
+    content: "";
+    position: absolute;
+    inset: 18px;
+    border-radius: 24px;
+    border: 1px dashed rgba(96, 165, 250, 0.25);
+}
+
+.code-orb {
+    position: relative;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.25), rgba(37, 99, 235, 0.08));
+    border: 1px solid rgba(96, 165, 250, 0.35);
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--accent);
+    animation: float 3.2s ease-in-out infinite;
+    box-shadow: 0 0 45px rgba(56, 189, 248, 0.25);
+}
+
+.hero-card p {
+    position: relative;
+    margin-top: 30px;
+    color: var(--muted);
+    font-weight: 800;
+    text-align: center;
 }
 
 .section-dark {
-    background: var(--bg);
+    background: transparent;
 }
 
 .section-light {
-    background: var(--bg-secondary);
+    background: rgba(9, 21, 39, 0.75);
 }
 
 .section-header {
@@ -164,7 +226,9 @@ nav a:hover {
 }
 
 .section-header h2 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1;
+    letter-spacing: -2px;
     margin-bottom: 18px;
 }
 
@@ -172,32 +236,71 @@ nav a:hover {
     color: var(--muted);
 }
 
+.project-grid,
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 26px;
 }
 
+.project-card,
 .card {
-    background: linear-gradient(180deg, var(--card), rgba(18,31,61,0.65));
+    background: linear-gradient(180deg, var(--card), rgba(14, 29, 54, 0.6));
     border: 1px solid var(--border);
     padding: 34px;
-    border-radius: 20px;
-    transition: 0.3s;
+    border-radius: 24px;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
+.project-card {
+    text-decoration: none;
+    color: var(--text);
+    min-height: 280px;
+}
+
+.project-card::before,
+.card::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    right: -60px;
+    top: -60px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.22), transparent 70%);
+}
+
+.project-card:hover,
 .card:hover {
     transform: translateY(-8px);
-    border-color: var(--primary-light);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    border-color: rgba(96, 165, 250, 0.65);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.28);
 }
 
+.project-card span {
+    display: inline-block;
+    margin-bottom: 55px;
+    color: var(--accent);
+    font-weight: 900;
+}
+
+.project-card h3,
 .card h3 {
     margin-bottom: 14px;
+    font-size: 1.35rem;
 }
 
+.project-card p,
 .card p {
     color: var(--muted);
+}
+
+.project-card small {
+    display: inline-block;
+    margin-top: 24px;
+    color: var(--primary-light);
+    font-weight: 900;
 }
 
 .about {
@@ -226,18 +329,14 @@ nav a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-
-    padding: 13px 20px;
+    padding: 13px 22px;
     border-radius: 999px;
-
     background: var(--card);
     border: 1px solid var(--border);
-
     color: var(--text);
     text-decoration: none;
-    font-weight: 700;
-
-    transition: 0.3s;
+    font-weight: 800;
+    transition: 0.3s ease;
 }
 
 .social-links a:hover {
@@ -264,10 +363,10 @@ input,
 textarea,
 select {
     width: 100%;
-    padding: 16px;
+    padding: 17px;
     border: 1px solid var(--border);
-    border-radius: 12px;
-    background: #0b1630;
+    border-radius: 16px;
+    background: rgba(11, 22, 48, 0.88);
     color: white;
     font-size: 1rem;
     outline: none;
@@ -277,22 +376,19 @@ input:focus,
 textarea:focus,
 select:focus {
     border-color: var(--primary-light);
-}
-
-select {
-    cursor: pointer;
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.08);
 }
 
 button {
-    padding: 16px;
+    padding: 17px;
     border: none;
-    border-radius: 12px;
+    border-radius: 16px;
     background: linear-gradient(135deg, var(--primary), var(--accent));
     color: white;
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 900;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 button:hover {
@@ -302,7 +398,7 @@ button:hover {
 footer {
     padding: 45px 10%;
     text-align: center;
-    background: #050b15;
+    background: #030815;
     border-top: 1px solid var(--border);
 }
 
@@ -314,7 +410,17 @@ footer p {
     color: var(--muted);
 }
 
-@media (max-width: 768px) {
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(-4deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(4deg);
+    }
+}
+
+@media (max-width: 850px) {
     nav {
         flex-direction: column;
         gap: 16px;
@@ -331,14 +437,22 @@ footer p {
     }
 
     .hero {
-        padding-top: 150px;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-buttons {
-        flex-direction: column;
+        justify-content: center;
     }
 
-    .btn {
-        text-align: center;
+    .hero-card {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
     }
 }
