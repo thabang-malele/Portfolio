@@ -1,263 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thabang Malele | Developer Portfolio</title>
+
+    <title>Thabang Malele | Software Developer</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.svg">
 </head>
 
 <body>
 
+    <!-- ================= NAVIGATION ================= -->
+
     <nav>
-        <div class="logo">Thabang<span>Malele</span></div>
+
+        <div class="logo">
+            Thabang<span>Malele</span>
+        </div>
 
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+
     </nav>
 
+    <!-- ================= HERO ================= -->
+
     <section id="home" class="hero">
+
         <div class="hero-glow"></div>
 
         <div class="hero-content">
-            <p class="section-tag">Developer • Builder • Digital Problem Solver</p>
+
+            <p class="section-tag">
+                Software Developer
+            </p>
 
             <h1>
-                Building digital systems for
+                Building software for
                 <span>real-world problems.</span>
             </h1>
 
             <p class="hero-text">
-                Websites, automation tools, AI workflows, and practical tech solutions
-                for people and businesses that need things to just work.
+                I develop websites, desktop applications, automation tools, and AI-powered
+                solutions that help people and businesses work smarter.
             </p>
 
             <div class="hero-buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="#contact" class="btn secondary">Work With Me</a>
+
+                <a href="#projects" class="btn primary">
+                    View Projects
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Hire Me
+                </a>
+
             </div>
+
         </div>
 
         <div class="hero-card">
-            <div class="code-orb">&lt;/&gt;</div>
-            <p>Design. Build. Automate. Deploy.</p>
+
+            <div class="code-orb">
+                &lt;/&gt;
+            </div>
+
+            <p>
+                Design • Build • Deploy
+            </p>
+
         </div>
+
     </section>
 
-<!-- ===================================== -->
-<!-- Projects -->
-<!-- ===================================== -->
+    <!-- ================= PROJECTS ================= -->
 
-<section id="projects" class="section-dark">
-    <div class="section-header">
-        <p class="section-tag">Projects</p>
-        <h2>Things I've Built</h2>
-        <p>
-            A collection of practical software, websites, and AI-powered tools.
-            Each project solves a real problem and reflects a different area of development.
-        </p>
-    </div>
+    <section id="projects" class="section-dark">
 
-    <div class="project-grid">
+        <div class="section-header">
 
-        <!-- Project 01 -->
-<a href="https://hyenapopcorn.netlify.app/" class="project-card" target="_blank">
+            <p class="section-tag">
+                Projects
+            </p>
 
-    <span>01</span>
+            <h2>
+                Selected Work
+            </h2>
 
-    <h3>Hyena Popcorn</h3>
+            <p>
+                A collection of websites, software, and tools I've built.
+            </p>
 
-    <p>
-        A modern landing page for a local bulk popcorn business, designed to
-        showcase products, pricing, and contact information through a warm,
-        approachable interface that works seamlessly across desktop and mobile devices.
-    </p>
+        </div>
 
-    <small>View Project →</small>
+        <div class="project-grid">
 
-</a>
+            <!-- LyricsFinder -->
 
-<!-- Project 02 -->
-<a href="https://lowquality.co.za/" class="project-card" target="_blank">
+            <a href="https://github.com/thabang-malele/LyricsFinder" class="project-card" target="_blank">
 
-    <span>02</span>
+                <span>01</span>
 
-    <h3>LowQuality</h3>
+                <h3>LyricsFinder</h3>
 
-    <p>
-        A bold monochrome clothing brand website focused on minimalist design,
-        clean typography, and a premium aesthetic that reflects the identity of
-        the brand while providing an engaging browsing experience.
-    </p>
+                <p>
+                    Python application for reading, editing, and embedding MP3 metadata and lyrics.
+                </p>
 
-    <small>View Project →</small>
+                <small>
+                    Python • Mutagen • Genius API
+                </small>
 
-</a>
+            </a>
 
-<!-- Project 03 -->
-<a href="https://phirirooms.netlify.app/" class="project-card" target="_blank">
+            <!-- LowQuality -->
 
-    <span>03</span>
+            <a href="https://lowquality.co.za/" class="project-card" target="_blank">
 
-    <h3>PhiriRooms</h3>
+                <span>02</span>
 
-    <p>
-        A responsive accommodation website created for a room rental business,
-        allowing visitors to explore available rooms, pricing, location details,
-        and contact information through a clean, user-friendly interface.
-    </p>
+                <h3>LowQuality</h3>
 
-    <small>View Project →</small>
+                <p>
+                    Modern clothing brand website with a clean,
+                    monochrome visual identity.
+                </p>
 
-</a>
+                <small>
+                    HTML • CSS • JavaScript
+                </small>
 
-<!-- Project 04 -->
-<a href="https://github.com/thabang-malele/SpeechTextTranscriptionSeal"
-   class="project-card"
-   target="_blank">
+            </a>
 
-    <span>04</span>
+            <!-- PhiriRooms -->
 
-    <h3>Speech-to-Text Generator</h3>
+            <a href="https://phirirooms.netlify.app/" class="project-card" target="_blank">
 
-    <p>
-        An offline speech-to-text application built with Python and Faster-Whisper.
-        Records audio from a microphone and produces accurate local transcriptions
-        without requiring an internet connection.
-    </p>
+                <span>03</span>
 
-    <small>View Repository →</small>
+                <h3>PhiriRooms</h3>
 
-</a>
+                <p>
+                    Accommodation website featuring rooms,
+                    pricing, and booking information.
+                </p>
 
-    </div>
-</section>
+                <small>
+                    HTML • CSS • JavaScript
+                </small>
+
+            </a>
+
+            <!-- Speech -->
+
+            <a href="https://github.com/thabang-malele/SpeechTextTranscriptionSeal" class="project-card"
+                target="_blank">
+
+                <span>04</span>
+
+                <h3>Speech-to-Text</h3>
+
+                <p>
+                    Offline Python application using Faster Whisper
+                    for accurate local transcription.
+                </p>
+
+                <small>
+                    Python • Faster Whisper
+                </small>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SERVICES ================= -->
 
     <section id="services" class="section-light">
+
         <div class="section-header">
-            <p class="section-tag">Services</p>
-            <h2>What I Can Build</h2>
-            <p>
-                Practical digital solutions for individuals, creators,
-                students, and small businesses.
+
+            <p class="section-tag">
+                Services
             </p>
+
+            <h2>
+                What I Build
+            </h2>
+
+            <p>
+                Practical software and technical solutions for businesses,
+                creators, and individuals.
+            </p>
+
         </div>
 
         <div class="card-grid">
+
             <div class="card">
                 <h3>Web Development</h3>
-                <p>Clean responsive websites for portfolios, brands, services, and local businesses.</p>
+                <p>Responsive websites for businesses, portfolios, and brands.</p>
             </div>
 
             <div class="card">
                 <h3>Software Development</h3>
-                <p>Custom tools, small systems, and application logic built around real needs.</p>
+                <p>Desktop applications and custom software built around real needs.</p>
             </div>
 
             <div class="card">
                 <h3>Automation</h3>
-                <p>Scripts that organize files, process data, and remove repetitive computer work.</p>
+                <p>Scripts that remove repetitive work and streamline workflows.</p>
             </div>
 
             <div class="card">
                 <h3>AI Solutions</h3>
-                <p>Local AI setups, prompt systems, assistant workflows, and productivity tools.</p>
+                <p>Local AI tools, assistants, and productivity workflows.</p>
             </div>
 
             <div class="card">
                 <h3>IT Support</h3>
-                <p>Windows support, software installation, troubleshooting, optimization, and setup.</p>
+                <p>Troubleshooting, software setup, optimization, and Windows support.</p>
             </div>
 
             <div class="card">
                 <h3>Computer Systems</h3>
-                <p>PC building, configuration, Windows/Linux setup, upgrades, and troubleshooting.</p>
+                <p>PC builds, Linux & Windows setup, upgrades, and maintenance.</p>
             </div>
+
         </div>
+
     </section>
 
-    <section id="contact" class="contact section-dark">
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about section-dark">
+
         <div class="section-header">
-            <p class="section-tag">Contact</p>
-            <h2>Let's Build Something</h2>
-            <p>
-                Have an idea, project, or technical problem?
-                Send me a message and let's figure it out.
+
+            <p class="section-tag">
+                About
             </p>
-        </div>
 
-        <form action="https://formspree.io/f/xaqgnopz" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
+            <h2>
+                Hi, I'm Thabang.
+            </h2>
 
-            <select name="budget" required>
-                <option value="">Select Budget Range</option>
-                <option value="R500 - R1000">R500 - R1000</option>
-                <option value="R1000 - R3000">R1000 - R3000</option>
-                <option value="R3000 - R5000">R3000 - R5000</option>
-                <option value="R5000+">R5000+</option>
-                <option value="Not sure yet">Not sure yet</option>
-            </select>
-
-            <textarea rows="6" name="problem" placeholder="Tell me what you need built..." required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <section id="about" class="about section-light">
-        <div class="section-header">
-            <p class="section-tag">About</p>
-            <h2>Hi, I'm Thabang.</h2>
         </div>
 
         <div class="about-content">
+
             <p>
-                I'm a developer and technical problem solver who enjoys building useful,
-                practical digital tools. My interests include software development,
-                AI, automation, computer systems, and creative problem-solving.
+                I'm a software developer passionate about building practical,
+                reliable technology. My interests include software engineering,
+                automation, AI, computer systems, and solving real-world problems.
             </p>
 
             <p>
-                I like building things that make life easier: websites that help people
-                get noticed, tools that save time, and systems that make technology feel
-                less annoying.
+                Whether it's a website, a desktop application, or an automation tool,
+                I enjoy creating software that saves time and delivers value.
             </p>
+
         </div>
 
         <div class="social-links">
+
             <a href="https://github.com/thabang-malele" target="_blank">
-                <img src="assets/icons/mdi--github.svg" alt="GitHub icon">
+                <img src="assets/icons/mdi--github.svg" alt="GitHub">
                 GitHub
             </a>
 
             <a href="https://www.linkedin.com/in/thabangmalele/" target="_blank">
-                <img src="assets/icons/mdi--linkedin.svg" alt="LinkedIn icon">
+                <img src="assets/icons/mdi--linkedin.svg" alt="LinkedIn">
                 LinkedIn
             </a>
 
             <a href="https://wa.me/+27815014718" target="_blank">
-                <img src="assets/icons/whatsapp.svg" alt="WhatsApp icon">
+                <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
                 WhatsApp
             </a>
 
             <a href="assets/thabang-malele-cv.pdf" target="_blank">
-                <img src="assets/icons/file-line-icon.svg" alt="CV icon">
+                <img src="assets/icons/file-line-icon.svg" alt="CV">
                 Download CV
             </a>
+
         </div>
+
     </section>
 
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact section-light">
+
+        <div class="section-header">
+
+            <p class="section-tag">
+                Contact
+            </p>
+
+            <h2>
+                Let's Build Something
+            </h2>
+
+            <p>
+                Have a project or idea? Let's talk.
+            </p>
+
+        </div>
+
+        <form action="https://formspree.io/f/xaqgnopz" method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <select name="budget" required>
+
+                <option value="">
+                    Budget
+                </option>
+
+                <option>R500 - R1 000</option>
+                <option>R1 000 - R3 000</option>
+                <option>R3 000 - R5 000</option>
+                <option>R5 000+</option>
+                <option>Not sure yet</option>
+
+            </select>
+
+            <textarea rows="6" name="problem" placeholder="Tell me about your project..." required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <h3>Thabang Malele</h3>
-        <p>Developer • Builder • Problem Solver</p>
+
+        <h3>
+            Thabang Malele
+        </h3>
+
+        <p>
+            Software Developer • Builder • Problem Solver
+        </p>
+
     </footer>
 
 </body>
+
 </html>
