@@ -2,8 +2,6 @@
 
 A modern developer portfolio showcasing practical software projects, websites, and automation tools.
 
-![Portfolio Preview](preview.png)
-
 ## Overview
 
 This portfolio serves as my personal website and central hub, highlighting projects, technical skills, and services. It was designed with a focus on clean UI, responsive layouts, and modern web design.
