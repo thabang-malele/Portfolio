@@ -2,7 +2,7 @@ const codeLines = [
   '<span class="t-comment">// Software Developer</span>\n',
   '<span class="t-keyword">const</span> dev = {\n',
   '  name: <span class="t-string">"Thabang"</span>,\n',
-  '  skills: [<span class="t-string">"Web"</span>, <span class="t-string">"AI"</span>, <span class="t-string">"Auto"</span>],\n',
+  '  skills: [<span class="t-string">"Web / App"</span>, <span class="t-string">"Design"</span>, <span class="t-string">"Auto"</span>],\n',
   '  status: <span class="t-string">"Building..."</span>\n',
   '};\n\n',
   '<span class="t-func">deploy</span>(dev);'
