@@ -67,16 +67,19 @@
 
         </div>
 
-        <div class="hero-card">
-
-            <div class="code-orb">
-                &lt;/&gt;
+        <div class="terminal-card">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">thabang.ts</span>
             </div>
-
-            <p>
-                Design • Build • Deploy
-            </p>
-
+            <div class="terminal-body">
+                <pre><code id="terminal-code"></code><span class="cursor"></span></pre>
+            </div>
+        </div>
         </div>
 
     </section>
@@ -103,80 +106,61 @@
 
         <div class="project-grid">
 
-            <!-- LyricsFinder -->
-
+            <!-- 01: LyricsFinder -->
             <a href="https://github.com/thabang-malele/LyricsFinder" class="project-card" target="_blank">
-
-                <span>01</span>
-
-                <h3>LyricsFinder</h3>
-
-                <p>
-                    Python application for reading, editing, and embedding MP3 metadata and lyrics.
-                </p>
-
-                <small>
-                    Python • Mutagen • Genius API
-                </small>
-
+                <div class="card-header">
+                    <span class="card-num">01</span>
+                    <span class="card-file">lyrics_finder.py</span>
+                </div>
+                <div class="card-body">
+                    <pre><code><span class="t-comment"># Desktop MP3 manager</span>
+<span class="t-comment"># Reads, edits, & embeds</span>
+<span class="t-comment"># metadata & song lyrics</span></code></pre>
+                </div>
+                <small>Python • Mutagen • Genius API</small>
             </a>
 
-            <!-- LowQuality -->
-
+            <!-- 02: LowQuality -->
             <a href="https://lowquality.co.za/" class="project-card" target="_blank">
-
-                <span>02</span>
-
-                <h3>LowQuality</h3>
-
-                <p>
-                    Modern clothing brand website with a clean,
-                    monochrome visual identity.
-                </p>
-
-                <small>
-                    HTML • CSS • JavaScript
-                </small>
-
+                <div class="card-header">
+                    <span class="card-num">02</span>
+                    <span class="card-file">lowquality.ts</span>
+                </div>
+                <div class="card-body">
+                    <pre><code><span class="t-comment">// Clothing brand site</span>
+<span class="t-comment">// Designed with a clean</span>
+<span class="t-comment">// monochrome layout</span></code></pre>
+                </div>
+                <small>HTML • CSS • JavaScript</small>
             </a>
 
-            <!-- PhiriRooms -->
-
+            <!-- 03: PhiriRooms -->
             <a href="https://phirirooms.netlify.app/" class="project-card" target="_blank">
-
-                <span>03</span>
-
-                <h3>PhiriRooms</h3>
-
-                <p>
-                    Accommodation website featuring rooms,
-                    pricing, and booking information.
-                </p>
-
-                <small>
-                    HTML • CSS • JavaScript
-                </small>
-
+                <div class="card-header">
+                    <span class="card-num">03</span>
+                    <span class="card-file">phiri_rooms.ts</span>
+                </div>
+                <div class="card-body">
+                    <pre><code><span class="t-comment">// Accommodation portal</span>
+<span class="t-comment">// Displays available rooms</span>
+<span class="t-comment">// rates, & booking info</span></code></pre>
+                </div>
+                <small>HTML • CSS • JavaScript</small>
             </a>
 
-            <!-- Speech -->
-
+            <!-- 04: Speech-to-Text -->
             <a href="https://github.com/thabang-malele/SpeechTextTranscriptionSeal" class="project-card"
                 target="_blank">
-
-                <span>04</span>
-
-                <h3>Speech-to-Text</h3>
-
-                <p>
-                    Offline Python application using Faster Whisper
-                    for accurate local transcription.
-                </p>
-
-                <small>
-                    Python • Faster Whisper
-                </small>
-
+                <div class="card-header">
+                    <span class="card-num">04</span>
+                    <span class="card-file">speech_transcribe.py</span>
+                </div>
+                <div class="card-body">
+                    <pre><code><span class="t-comment"># Offline audio app</span>
+<span class="t-comment"># Powered by Faster Whisper</span>
+<span class="t-comment"># for local transcription</span></code></pre>
+                </div>
+                <small>Python • Faster Whisper</small>
             </a>
 
         </div>
@@ -185,60 +169,91 @@
 
     <!-- ================= SERVICES ================= -->
 
-    <section id="services" class="section-light">
-
-        <div class="section-header">
-
-            <p class="section-tag">
-                Services
+<section id="services" class="section-dark">
+    <div class="section-header">
+        <p class="section-tag">
+                Services & Skills
             </p>
+        <h2>What I Build</h2>
+        <p>Practical software and technical solutions for businesses, creators, and individuals.</p>
+    </div>
 
-            <h2>
-                What I Build
-            </h2>
+    <div class="card-grid">
 
-            <p>
-                Practical software and technical solutions for businesses,
-                creators, and individuals.
-            </p>
-
+        <!-- 01: Web Dev -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-num">01</span>
+                <span class="card-file">web_dev.config</span>
+            </div>
+            <div class="card-body">
+                <h3>Web Development</h3>
+                <p>Responsive websites for businesses, portfolios, and modern brands.</p>
+            </div>
         </div>
 
-        <div class="card-grid">
-
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>Responsive websites for businesses, portfolios, and brands.</p>
+        <!-- 02: Software Dev -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-num">02</span>
+                <span class="card-file">app_dev.config</span>
             </div>
-
-            <div class="card">
+            <div class="card-body">
                 <h3>Software Development</h3>
                 <p>Desktop applications and custom software built around real needs.</p>
             </div>
-
-            <div class="card">
-                <h3>Automation</h3>
-                <p>Scripts that remove repetitive work and streamline workflows.</p>
-            </div>
-
-            <div class="card">
-                <h3>AI Solutions</h3>
-                <p>Local AI tools, assistants, and productivity workflows.</p>
-            </div>
-
-            <div class="card">
-                <h3>IT Support</h3>
-                <p>Troubleshooting, software setup, optimization, and Windows support.</p>
-            </div>
-
-            <div class="card">
-                <h3>Computer Systems</h3>
-                <p>PC builds, Linux & Windows setup, upgrades, and maintenance.</p>
-            </div>
-
         </div>
 
-    </section>
+        <!-- 03: Automation -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-num">03</span>
+                <span class="card-file">automation.sh</span>
+            </div>
+            <div class="card-body">
+                <h3>Automation</h3>
+                <p>Custom scripts that eliminate repetitive manual work & streamline workflows.</p>
+            </div>
+        </div>
+
+        <!-- 04: AI Solutions -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-num">04</span>
+                <span class="card-file">ai_models.py</span>
+            </div>
+            <div class="card-body">
+                <h3>AI Solutions</h3>
+                <p>Local AI integration, custom intelligent assistants, & smart productivity tools.</p>
+            </div>
+        </div>
+
+        <!-- 05: IT Support -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-num">05</span>
+                <span class="card-file">sys_support.log</span>
+            </div>
+            <div class="card-body">
+                <h3>IT Support</h3>
+                <p>Technical troubleshooting, software environment setup, & system optimization.</p>
+            </div>
+        </div>
+
+        <!-- 06: Computer Systems -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-num">06</span>
+                <span class="card-file">hardware.sys</span>
+            </div>
+            <div class="card-body">
+                <h3>Computer Systems</h3>
+                <p>Custom PC builds, Linux & Windows OS configuration, upgrades, & maintenance.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <!-- ================= ABOUT ================= -->
 
@@ -360,6 +375,8 @@
         </p>
 
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
