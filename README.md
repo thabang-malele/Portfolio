@@ -27,11 +27,10 @@ This portfolio serves as my personal website and central hub, highlighting proje
 
 ## Projects Featured
 
-- 🍿 Hyena Popcorn
+- ♾️ InfinityNotes
 - 👕 LowQuality
-- 📿 HlatsiBracelets
+- 🍔 KotaPalace
 - 🏠 PhiriRooms
-- 🎙️ SpeechTextTranscriptionSeal
 
 ## Services
 
@@ -55,12 +54,6 @@ https://thabangmalele-dev.netlify.app
 ## GitHub
 
 https://github.com/thabang-malele
-
-## Connect
-
-- LinkedIn
-- WhatsApp
-- GitHub
 
 ---
 
